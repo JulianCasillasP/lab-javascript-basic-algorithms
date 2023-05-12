@@ -35,3 +35,16 @@ else if (hacker2Mayuscula < hacker1Mayuscula) {
     console.log(`Yo, the ${hacker2} goes first, definitely.`)
 }
 else (console.log("What?! You both have the same name?"))
+// Bonus 1
+
+let longText = "Lorem ipsum dolor sit amet consectetur adipiscing elit, sociis malesuada etiam luctus pharetra est euismod proin, facilisis fringilla diam aliquet lectus laoreet. Interdum elementum turpis diam lobortis luctus in imperdiet vehicula, tincidunt ad volutpat egestas pulvinar massa feugiat, pellentesque dictum montes augue nascetur nibh erat. In sapien varius aliquet luctus dignissim condimentum maecenas fames velit, lectus donec dictum pellentesque hendrerit sem porttitor libero morbi nam, quam inceptos conubia justo per augue venenatis blandit."
+
+let space = " ";
+let counterWord = 0;
+
+for (let i = 0; i < longText.length; i++){
+    if(longText[i] === space){
+        counterWord += 1
+    }
+}
+console.log(counterWord)
